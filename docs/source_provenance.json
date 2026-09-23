@@ -1,0 +1,1025 @@
+{
+  "source_repository": "https://github.com/AshadowZ/Extended-GS",
+  "source_branch": "scene_gen",
+  "source_base_commit": "75673a0d58d0eb27d6bd4ee8287658d437a0c4dd",
+  "snapshot_date": "2026-09-23",
+  "scope": "Scene-generation working-tree snapshot including uncommitted additions; not a transfer of source Git history. Entries hash source files before standalone packaging edits.",
+  "files": [
+    {
+      "path": ".gitmodules",
+      "source_sha256": "1ff4ed54a84c2188505398ceb56c20d5160f95ca3225e58d9c15db8ef709fb32"
+    },
+    {
+      "path": "CITATION.bib",
+      "source_sha256": "b681c48c1e6767ca4d2ec6668c78f98fd563d1d364194cc98d6979d0f61648e3"
+    },
+    {
+      "path": "LICENSE",
+      "source_sha256": "96a4f89293c0df19880da9b0e35f67589f5885ea61b224ef16bb2bd599a8a44d"
+    },
+    {
+      "path": "MANIFEST.in",
+      "source_sha256": "b5f3970851e2e5d19e00683307f7d9c40098a4ce413d187f6debf771aba6681c"
+    },
+    {
+      "path": "docs/SCENE_GEN_API_COMPARISON.zh-CN.md",
+      "source_sha256": "b990d6e88f3d882571690df084b992197060ce816842ee4f9a64bdbbea613b28"
+    },
+    {
+      "path": "docs/SCENE_GEN_FULL_OBJECTS.zh-CN.md",
+      "source_sha256": "61c17e0ed7dfb4b5fa8ea3b5aa7ec35dd2058c830306cfa9683d98a199c350b7"
+    },
+    {
+      "path": "docs/SCENE_GEN_HYBRID.zh-CN.md",
+      "source_sha256": "490a4a3f1894508a3d41a07d68a56f25fe6b0dce815015255477b849aa3ba878"
+    },
+    {
+      "path": "docs/SCENE_GEN_INDOOR.zh-CN.md",
+      "source_sha256": "aeb2ff6f4f5d16f7cf0d7dd67813ba5b63085ae884544649db7216801e845886"
+    },
+    {
+      "path": "docs/SCENE_GEN_MULTIVIEW_RESEARCH.zh-CN.md",
+      "source_sha256": "76735124a1c553d5a60fb9db3088136a69a19ace23482691a333e71886e637d3"
+    },
+    {
+      "path": "docs/SCENE_GEN_SETUP.zh-CN.md",
+      "source_sha256": "95e4e7d0fd83f8368fea82def065e1e366db3066e76eeba19224081589c14c30"
+    },
+    {
+      "path": "docs/SCENE_GEN_SIMULATION.zh-CN.md",
+      "source_sha256": "73e297c9c3a9bae681256f77689570c6ab1100ed164ed0b28b18d7dda512231f"
+    },
+    {
+      "path": "environment.scene-gen.yml",
+      "source_sha256": "8ea41c3752569efd7ddea3d8722554e69e5b66cead34ee2bbc9744c650bcb54d"
+    },
+    {
+      "path": "examples/datasets/colmap.py",
+      "source_sha256": "36f24fa4a4903f8b4b4e05ba3a1e68c64ef8b2c1a864220ee7e9df2a8c255d46"
+    },
+    {
+      "path": "examples/datasets/colmap_util.py",
+      "source_sha256": "33f6983bd574af6f7b8d9aaf240285eacf8a903e77b30dc2a70923d560cf846f"
+    },
+    {
+      "path": "examples/datasets/download_dataset.py",
+      "source_sha256": "b943be8ce5bde561665e0a578da915c75549fec268de9165806cce500f6d19a4"
+    },
+    {
+      "path": "examples/datasets/normalize.py",
+      "source_sha256": "0a3b00cb77fa0a2a7e4b44776136f037c3dd71c2ef18d4fb5b868ca30bc88980"
+    },
+    {
+      "path": "examples/datasets/traj.py",
+      "source_sha256": "69eb03c2b9d04c88bc2d4c4e0a5f398a51b8079889f3aea83775328f455ff936"
+    },
+    {
+      "path": "examples/extended_trainer.py",
+      "source_sha256": "bcb59026500d5ee79852d69d5c23005551a1aa6a645ef5cd492909c2bb4defab"
+    },
+    {
+      "path": "examples/gsplat_viewer.py",
+      "source_sha256": "cbdf0392167e8b900194fd5fc94703104fe1d17af104d684397fa82f37e8b207"
+    },
+    {
+      "path": "examples/lib_bilagrid.py",
+      "source_sha256": "fefcebafdf7e8c533fe8c0c83c67a81b010ecc2e4b99677a49528307a306f4b2"
+    },
+    {
+      "path": "examples/mesh/assemble_full_object_scene.py",
+      "source_sha256": "ff05bb780c4d360e03ed3dc2305e77ab344c938b7503ae6b5f269241fa7d79f5"
+    },
+    {
+      "path": "examples/mesh/compose_hybrid_scene.py",
+      "source_sha256": "3d7c8bc323064884c19000ee9d4c6a63d8f0e19788a8678634671240bb278858"
+    },
+    {
+      "path": "examples/mesh/constrain_object_extents.py",
+      "source_sha256": "dec81180ae9f752c4642fde83fe8cf0d7684cfb8db2ca092cfe188485b95c9d9"
+    },
+    {
+      "path": "examples/mesh/export_isaac_scene.py",
+      "source_sha256": "6aae1c6ee37a702381749baf2c4e96c805ffae93fd2cf02592b076bb613ffa14"
+    },
+    {
+      "path": "examples/mesh/o3dtsdf_mesh_from_gs.py",
+      "source_sha256": "2f6d792345c1a212766cd918714eb66f2d02266209c3bec8844dfab1b62e7aa2"
+    },
+    {
+      "path": "examples/mesh/observed_color_material.py",
+      "source_sha256": "e8356eba47fb7bbeb72840e7914a1503e9538d9536f224aad8052aaeaa1fad51"
+    },
+    {
+      "path": "examples/mesh/reconstruct_scene_simulation.py",
+      "source_sha256": "5f8a8ede76faac183f7bbbddd9e953345e0d92b0a38e5776894b4d5195c3db6a"
+    },
+    {
+      "path": "examples/mesh/render_full_object_previews.py",
+      "source_sha256": "e62329d8bb2c4623b72b11cfdb34629af6def3fe59dc1a17d42b06f93f6f39a4"
+    },
+    {
+      "path": "examples/mesh/repair_generated_object.py",
+      "source_sha256": "17633eed85589b4b737101deee75b2bff9a52c07565923a790709b3eeb555b09"
+    },
+    {
+      "path": "examples/mesh/select_and_repair_full_objects.py",
+      "source_sha256": "2a494289ee4e5c6aad2159237fa7459f5429c72d8bbd928716573a5ed8879924"
+    },
+    {
+      "path": "examples/mesh/validate_scene_assets.py",
+      "source_sha256": "9cfb70f9ca7dfc6ea49d4739de78014b55cd8d09816f276cd17ba9a85b7d7d7a"
+    },
+    {
+      "path": "examples/preprocess/hloc_utils.py",
+      "source_sha256": "f778c760c9e33327b8f6a18c2ede0e6db9783229c5e90e92cdd43e74aab9c8ae"
+    },
+    {
+      "path": "examples/preprocess/pairs_from_sequential.py",
+      "source_sha256": "281c0c9032263fd0ffab799bfb5c962bc4bb9c5a1ad5b30a1443377ad06653a2"
+    },
+    {
+      "path": "examples/preprocess/run_hloc_sfm.py",
+      "source_sha256": "ba063b406db6ef7daf773a8116bda03b802ca8e5a3352e735df6be87bfe4a26a"
+    },
+    {
+      "path": "examples/requirements.txt",
+      "source_sha256": "0214d5b243a00e179482d99521e8ce3033ddae25b060369320b08f3fc511233b"
+    },
+    {
+      "path": "examples/segmentation/assemble_multiview_templates.py",
+      "source_sha256": "f5caec2b83e35eb0005770a2e5f6d54a90be405cff8dda02bfcd9bf96192a331"
+    },
+    {
+      "path": "examples/segmentation/build_candidate_graph.py",
+      "source_sha256": "e5949a413b581270ec511a0464d1e0aa78a1c33d00a80a4479aa475fe228b64b"
+    },
+    {
+      "path": "examples/segmentation/compare_multiview_results.py",
+      "source_sha256": "4385a2d474632289193af92b50893e8887d0f8eb56227c499ca147819a290f32"
+    },
+    {
+      "path": "examples/segmentation/densify_instance_labels.py",
+      "source_sha256": "c375c64445de5ac9d495413681b48d3edc3927aa2d7c30dc86ebe3141ffde532"
+    },
+    {
+      "path": "examples/segmentation/evaluate_multiview_additional_views.py",
+      "source_sha256": "f434eb1062231b885d52144703233137251c17294009a3558f7c3c85e76163d3"
+    },
+    {
+      "path": "examples/segmentation/export_observed_instance_views.py",
+      "source_sha256": "a48f57d4c1303484dc1d7ceae1c82550628361ca1b5b0911d74494719f16b2ce"
+    },
+    {
+      "path": "examples/segmentation/extract_banana_inpaint_bottom_row.py",
+      "source_sha256": "9d984e21cb2f227ef2bfba247894a6a4c407855db5217a0035a3404538c0964a"
+    },
+    {
+      "path": "examples/segmentation/extract_vlm_views.py",
+      "source_sha256": "93295e2333a678fa423f111906f97f3faa708a10fcec84f70be9e9abe8176d6d"
+    },
+    {
+      "path": "examples/segmentation/full_scene_inventory.py",
+      "source_sha256": "363aa8f4fb6a5285479d133b6ae99aa78d1e84ebf63ac1a36d8981702a94c799"
+    },
+    {
+      "path": "examples/segmentation/generate_instance_views.py",
+      "source_sha256": "f3da953781eaaf0e9fa0b1ebb265e19e2271e7caf6c80f8eebb8787917ed6c38"
+    },
+    {
+      "path": "examples/segmentation/generate_sam3d_objects.py",
+      "source_sha256": "8c6c35ea29be016c35f7bad6b2dc84165e81c615d0f5514dd66121127545680d"
+    },
+    {
+      "path": "examples/segmentation/generate_worldsculpt_objects.py",
+      "source_sha256": "d41c88ceb2ed5ae814c98664c25874f3a390a215467c047fd6e149c463290c52"
+    },
+    {
+      "path": "examples/segmentation/inspect_full_scene_objects.py",
+      "source_sha256": "27d6f310bd85565d2111229758d2867960e5e27b3d38c6476069b4f728d26e44"
+    },
+    {
+      "path": "examples/segmentation/inspect_multiview_geometry.py",
+      "source_sha256": "6b7b1d2b57c3740fbec3b147280514f05ee510f8585bbe5e9837ca6733fce45b"
+    },
+    {
+      "path": "examples/segmentation/instascene_gauscluster.py",
+      "source_sha256": "065778f5ca9b91f28c355f0922465fe8f4b7cf20929ae5af4ebafb9aa1fc2546"
+    },
+    {
+      "path": "examples/segmentation/merge_vlm_result.py",
+      "source_sha256": "877d58fb0cb67d5ec50931cddf7718e24ffe6146992e9e34b5a07dd0d2f14be4"
+    },
+    {
+      "path": "examples/segmentation/multiview_shape_guide.py",
+      "source_sha256": "0770b6d392de51c6206da2aaff0c5c416009b9e0e914e8c0de9b9840d99f070b"
+    },
+    {
+      "path": "examples/segmentation/prepare_atomic_geometry.py",
+      "source_sha256": "8174d992e953fbdbb3be51aa64ca8f0889dbcce69c1c11a1cd9abe12c2a73800"
+    },
+    {
+      "path": "examples/segmentation/prepare_completed_multiview.py",
+      "source_sha256": "d8d6cec64d0585a905fe592f99f7c74cbb7e33e2df223096cb77719b8fee9f8d"
+    },
+    {
+      "path": "examples/segmentation/prepare_multiview_comparison.py",
+      "source_sha256": "03425f1866e8812c04a6388efdcfa6e0725a7ff38288ea26d2654672d4ebcc93"
+    },
+    {
+      "path": "examples/segmentation/prepare_registered_completion.py",
+      "source_sha256": "417602b3c45c4413b3a9039641d127f8c87db21631ac1132d2bbc497479faa0e"
+    },
+    {
+      "path": "examples/segmentation/prepare_solid_object_inputs.py",
+      "source_sha256": "026fa7e694614e14e20c753231c8bdd63163d706125be6ad527c1c6c1e2d0ae5"
+    },
+    {
+      "path": "examples/segmentation/prepare_table_surface_completion.py",
+      "source_sha256": "2addd01cb8169d178b64bbe2375812e45b4d074b4e3186db59cff61706c28280"
+    },
+    {
+      "path": "examples/segmentation/refine_clipped_book_pose.py",
+      "source_sha256": "fdd69ad3fc43759f448ba4cf2e090f8efdb6931aa44219e58f754a828c6b8bda"
+    },
+    {
+      "path": "examples/segmentation/refine_full_scene_inventory.py",
+      "source_sha256": "0f4fec45397202b3322800664129894bff3972384eb0da16fee319a6a4250919"
+    },
+    {
+      "path": "examples/segmentation/refine_instance_masks.py",
+      "source_sha256": "ab4213f7a49ca40dd5bfcd35a7a502550f10c8c8afe1333f91c0816d0e78dd39"
+    },
+    {
+      "path": "examples/segmentation/refine_occluded_object_bounds.py",
+      "source_sha256": "f6f748ef3fa53146717b8d920b61c3e911c0c43fb467a3d33dcb2eb808f10ece"
+    },
+    {
+      "path": "examples/segmentation/render_masks.py",
+      "source_sha256": "27c6c9da5cab5759194fbbc1438a35f3373d13b6c53e2510329c85d6728d68e7"
+    },
+    {
+      "path": "examples/segmentation/segment_furniture_sam3.py",
+      "source_sha256": "934908bd5abd80f36805259dfa69ddd5741ac6783bac94e5fd213b2de64e26e1"
+    },
+    {
+      "path": "examples/segmentation/track_full_scene_objects.py",
+      "source_sha256": "79c52bc13f88407f02a673fdb0b20b723a10a1f56e246109a6e9022ffb5f800e"
+    },
+    {
+      "path": "examples/simple_viewer.py",
+      "source_sha256": "a0988ef350cafd4eb1b14a912986c7b62bb1e704784f74acd6333d170f6a9d94"
+    },
+    {
+      "path": "examples/utils.py",
+      "source_sha256": "d67600f6d556109a9840fead9554f9e35e5b7b683155b248a275af94209efa76"
+    },
+    {
+      "path": "gsplat/__init__.py",
+      "source_sha256": "6ed6e279cba11218da043adcfb2347397f676db90637c5d90aabb8252bd7d25b"
+    },
+    {
+      "path": "gsplat/_helper.py",
+      "source_sha256": "0ad5bc3a0fec2ab3f98fcfe3e9a6e46c181f8c55d4541e9402c40bff62c8ac34"
+    },
+    {
+      "path": "gsplat/compression/__init__.py",
+      "source_sha256": "40aee8cdcdb12afda2860a412c939ae558ea4b0b22a4f790bd82cd2a53ccb5e2"
+    },
+    {
+      "path": "gsplat/compression/png_compression.py",
+      "source_sha256": "cdc1552349f147fcd905ab73f270363bfc2c423c054a89a2f2ff41651760d92c"
+    },
+    {
+      "path": "gsplat/compression/sort.py",
+      "source_sha256": "44347e61ad1f2e4c480f4c272145dfb21d330bf346a4cba6d357fe3989269bf2"
+    },
+    {
+      "path": "gsplat/cuda/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gsplat/cuda/_backend.py",
+      "source_sha256": "03a6e16e27d956a64065f647b5ab755492a056e04d4062f65eecaca65ec98864"
+    },
+    {
+      "path": "gsplat/cuda/_torch_impl.py",
+      "source_sha256": "bb0a7d1a9bbabb9d6e610883cc1af63065898924df1d64d6cf72fcabd2f1cd19"
+    },
+    {
+      "path": "gsplat/cuda/_torch_impl_2dgs.py",
+      "source_sha256": "55e95b455541b3dfe76b9da56c96373ec69503671578ac657086a1e66d11a5cc"
+    },
+    {
+      "path": "gsplat/cuda/_wrapper.py",
+      "source_sha256": "8f85cac554cdb0eb8b78828597b4763f1432630eafb074db1099f502536640d5"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Adam.cpp",
+      "source_sha256": "f2526179a8da522105475769f678b6ece6fb9f72820f6860ed1389d18f1a6f22"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Adam.h",
+      "source_sha256": "f539659e7c8f55cac944e190740b16e97561e407f672e9f3798a52a142e22949"
+    },
+    {
+      "path": "gsplat/cuda/csrc/AdamCUDA.cu",
+      "source_sha256": "6ca87ddad369e61dd1094759c8210d95580dde7ec98b77cda39c658e05e6414d"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Intersect.cpp",
+      "source_sha256": "6b487f343557a7302f007dbc6886aada275d4d9de559760f2734a79982c1cad5"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Intersect.h",
+      "source_sha256": "efcfa29d112b546929947d79383c311d68e69d3a937c434dc8a3222134097747"
+    },
+    {
+      "path": "gsplat/cuda/csrc/IntersectTile.cu",
+      "source_sha256": "ca321d5e1f2e7b48372bf428d1f2fe92a2115bccdb186b83c0725bc84095b015"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Null.cpp",
+      "source_sha256": "79a18e027251dae0de15ccc0a64b9d0f19658f268a624b32e80e3a4d1f9162b3"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Null.h",
+      "source_sha256": "c52f35c68088d30a1ba643eabedbfa87dfab4c88be9ea5b8f3a5bf6363a7430f"
+    },
+    {
+      "path": "gsplat/cuda/csrc/NullCUDA.cu",
+      "source_sha256": "f78c05e8623ecb8e2dff2094817641361de1f90adb117f7a6d4a96b0e0b57837"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Projection.cpp",
+      "source_sha256": "a70197346350deda0c4925b3cec69f1e5911494cf37fb10c231689fb34a0b096"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Projection.h",
+      "source_sha256": "3f119feaf5177dd3e1df4e9b4215bc8087bc4a5a61dd88e94c98484b92ea7430"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Projection2DGS.cuh",
+      "source_sha256": "df1a58e56f8b2a6d93e5c11d3142ef22448f97f6071b904022b7d769c27844f2"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Projection2DGSFused.cu",
+      "source_sha256": "481ff05256a1b19c01da3f0e620fa2c7ecc28073e4de837249e54a27159d4c67"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Projection2DGSPacked.cu",
+      "source_sha256": "448b009e5614435313a35b95ebc30386fed0db313bcba49d9415031b129011d8"
+    },
+    {
+      "path": "gsplat/cuda/csrc/ProjectionEWA3DGSFused.cu",
+      "source_sha256": "69e835ad68f67ed2536a78ebd757ee869b30d0f3909848231e50b2343fd8705b"
+    },
+    {
+      "path": "gsplat/cuda/csrc/ProjectionEWA3DGSPacked.cu",
+      "source_sha256": "d0cfc631569e4d1fc4dea47e6257d26443c4f40c3f297dc19dcd01337cb2a331"
+    },
+    {
+      "path": "gsplat/cuda/csrc/ProjectionEWASimple.cu",
+      "source_sha256": "1358dc5aa480bea94275a972fc03f5360786bd6fca8aafcfdf69633011629f07"
+    },
+    {
+      "path": "gsplat/cuda/csrc/ProjectionUT3DGSFused.cu",
+      "source_sha256": "1e565082e7314a3bb25c780435cd61399c3c11ca805eb6ac7e25480be2055400"
+    },
+    {
+      "path": "gsplat/cuda/csrc/QuatScaleToCovar.cpp",
+      "source_sha256": "b73880ae2fa684d8afbbc1974a0d1a2b548ad9dab2b128a8188b4f1e0ca542c5"
+    },
+    {
+      "path": "gsplat/cuda/csrc/QuatScaleToCovar.h",
+      "source_sha256": "91a0ac5ef398331f91c9a0ee4eaf424ce2d3c0d1cce7fe9a8624a29fa2bcfe95"
+    },
+    {
+      "path": "gsplat/cuda/csrc/QuatScaleToCovarCUDA.cu",
+      "source_sha256": "ef18b847882d83e6b69800d8d047de63a1e34d322e3180b7f8f2164ddc6929a7"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Rasterization.cpp",
+      "source_sha256": "32e6c12b2e8455e8e4dec441b8d228927baf073a3453fb3869184950043faf37"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Rasterization.h",
+      "source_sha256": "0795976db196d74a0878f44acdbcbc6cfb6d44c3c9b7aac6a75512993da2762c"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToIndices2DGS.cu",
+      "source_sha256": "219b6bf663a867a65b35cb0e99e0081a5f596a8d9497cd855901247ff744879f"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToIndices3DGS.cu",
+      "source_sha256": "13910c63b730d0acd8303f600ef9c29ccbf90b9c04682312eec29db4c10b1d38"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixels2DGSBwd.cu",
+      "source_sha256": "19aaa6597d4818a741dcd37a89afb7c3d66ea725b6f00728a7df668909c84127"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixels2DGSFwd.cu",
+      "source_sha256": "e8c7d1182a6ca33a4e7f55f1706158edfb16868e2d3b69ff32da3293b098f6dd"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixels3DGSBwd.cu",
+      "source_sha256": "534871bc07247d7c5fcba5e087214e3aa890c8972bf45c9a2d36d7cf70e17a43"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixels3DGSFwd.cu",
+      "source_sha256": "c8403aaa1c83a317054d58df87fb82594e1b29dca3728085d110852bbd64e3e9"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixelsFromWorld3DGSBwd.cu",
+      "source_sha256": "b9c87a90d9d1df3b71adbd0e3156e0377abc2cc28449cae3daee89f53b9c361a"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RasterizeToPixelsFromWorld3DGSFwd.cu",
+      "source_sha256": "d747fcd08d8d57d5a28dc7babe1ecf1d831791c816d394347a7e4680e50ae637"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Relocation.cpp",
+      "source_sha256": "0f6cff6bc503f0f6c9730ba87e585f2751538d46034e1e36b59e463a4ebeb096"
+    },
+    {
+      "path": "gsplat/cuda/csrc/Relocation.h",
+      "source_sha256": "02c2640677fdf06406091cc38b3bd67591c6a6cdd9f96915a2c97832e94a3da1"
+    },
+    {
+      "path": "gsplat/cuda/csrc/RelocationCUDA.cu",
+      "source_sha256": "dca4b1cef039e94eb2c902f20e645e777cca3f9be352da8bab9cffa4ac794051"
+    },
+    {
+      "path": "gsplat/cuda/csrc/SphericalHarmonics.cpp",
+      "source_sha256": "ad44d8af60edd17cdfb1f1485bd6f346f5faea7e41842ec9b840cf2092abb222"
+    },
+    {
+      "path": "gsplat/cuda/csrc/SphericalHarmonics.h",
+      "source_sha256": "449ca22bf97bf84814ed1695e4598570b7a29fbbbe31c77c7faa1fb92b5fcaec"
+    },
+    {
+      "path": "gsplat/cuda/csrc/SphericalHarmonicsCUDA.cu",
+      "source_sha256": "337de34d74fc382f9046e111c4ce10241dac73ef73d136224bb403ceea07a5c2"
+    },
+    {
+      "path": "gsplat/cuda/ext.cpp",
+      "source_sha256": "68e98307f8f75db2d196b0411199bc20e2ab35869bc7a8d96050390218586ee4"
+    },
+    {
+      "path": "gsplat/cuda/include/Cameras.cuh",
+      "source_sha256": "b82b53e72307c00a80c7999a2c04f895c0b5f3f269790e51169f36a11373f96f"
+    },
+    {
+      "path": "gsplat/cuda/include/Cameras.h",
+      "source_sha256": "e297efe7ade26e2ee2984d1cf796ac3ca8b2a70acaa11e8b5488ca0329055cb1"
+    },
+    {
+      "path": "gsplat/cuda/include/Common.h",
+      "source_sha256": "d865c47346ced0830186b37f8abc0800c056114a78dd3cb87e0b5ff5c3a7cc73"
+    },
+    {
+      "path": "gsplat/cuda/include/Ops.h",
+      "source_sha256": "6748621d15eb62657f2551f4f6bd5b2d5a03ff5e85ca5677fe3b49dd991390b7"
+    },
+    {
+      "path": "gsplat/cuda/include/Utils.cuh",
+      "source_sha256": "e1a62dbd73fccfc8349abb87d7cc8eb25a03e120ea8dc838d1c5d322361245cd"
+    },
+    {
+      "path": "gsplat/distributed.py",
+      "source_sha256": "fe3cfd7698da9e13de56a8d7dd1e38a3b8b20ca37ce044a349bdcec08a4f87a2"
+    },
+    {
+      "path": "gsplat/exporter.py",
+      "source_sha256": "f0154e4f2e0276921cfdd1c028c9e5557a2afbfe511a6f5d3f280f275948f5e1"
+    },
+    {
+      "path": "gsplat/optimizers/__init__.py",
+      "source_sha256": "26432001b4b047d2aff720bbaec4607e81bbfd3ba09db357f5abdac5a40ae5b1"
+    },
+    {
+      "path": "gsplat/optimizers/selective_adam.py",
+      "source_sha256": "ff2f8c05ba2b008c116d3df4f94f634e07f66e52e43741baac9ec15bd77316bf"
+    },
+    {
+      "path": "gsplat/profile.py",
+      "source_sha256": "587f3be9b09eb2f58887e19f50906a18991a8e6f67e75440bcfb200a90ed027f"
+    },
+    {
+      "path": "gsplat/relocation.py",
+      "source_sha256": "6843cb21b97844df891edfcba833d7fe97beccd88f365e3a68786d71f54c82ea"
+    },
+    {
+      "path": "gsplat/rendering.py",
+      "source_sha256": "25a85d6cc1988448cfa94b41999497539ed926a2bca54d4f603cb5daf7d66377"
+    },
+    {
+      "path": "gsplat/strategy/__init__.py",
+      "source_sha256": "e1f809a8a95dc191192f7be1bf48b85c80e8c2f9c1b44e7589defd59a5707dc1"
+    },
+    {
+      "path": "gsplat/strategy/base.py",
+      "source_sha256": "f0e92bab7d567c671992b795337bbab36d4aabf32d618bd71fc9e1c63647c3c0"
+    },
+    {
+      "path": "gsplat/strategy/default.py",
+      "source_sha256": "519a23be64f2426e9a3271bb8753522c4589580d0663c20b4b6b57bee5580882"
+    },
+    {
+      "path": "gsplat/strategy/improved.py",
+      "source_sha256": "ddb1dac1f6331c29a39254b2b66abfa7148b0a1d950f7ef5941fdd7113463c5c"
+    },
+    {
+      "path": "gsplat/strategy/ops.py",
+      "source_sha256": "245960512f198a8b82d80845a00a1f23c32265faba46a16622b94333832d4ec3"
+    },
+    {
+      "path": "gsplat/utils.py",
+      "source_sha256": "e0d9a145811669e929e66bb6d23f45b234ccde359a67c7e8fc3e20ee286eb69a"
+    },
+    {
+      "path": "gsplat/version.py",
+      "source_sha256": "669ecc44e76cbe92d0e66ac66fc4b0d5e2265ac2ff80ee40f405f6fe2f56a391"
+    },
+    {
+      "path": "requirements-scene-gen-3d.txt",
+      "source_sha256": "68730aca08856e5d9c33e8a7564a5b356e89b0ba9754e462fd565bcf57e628d1"
+    },
+    {
+      "path": "requirements-scene-gen-hybrid.txt",
+      "source_sha256": "3e4f4e07a6deab9a0aa2b2b0bcf7fb89b1eb316490b721e8dcd879058c824aa6"
+    },
+    {
+      "path": "requirements-scene-gen-simulation.txt",
+      "source_sha256": "7a98f497cbe5dcb4ff55108200b54939ef5ab9869a8ccd603a7cc46b5b1badb4"
+    },
+    {
+      "path": "requirements-scene-gen-worldsculpt.txt",
+      "source_sha256": "b7b7df6909cf5511ca626b3ea70e1fc7fc7da0cc0b236f2b7b777c3903a96eeb"
+    },
+    {
+      "path": "requirements-scene-gen.txt",
+      "source_sha256": "e9bcdc3a48e06e0f5546e4583015bdce45a72be193d721ac75abd601009a9d81"
+    },
+    {
+      "path": "scripts/complete_full_object_views.py",
+      "source_sha256": "6d85198bc57dc150111cd3ae6ce7ea51267da1aff77418f07999f937a40ccbcb"
+    },
+    {
+      "path": "scripts/complete_multiview_api.py",
+      "source_sha256": "2b023e867a878709497c882ff407293a149ffeb2fb690abf4a048f3d1072c825"
+    },
+    {
+      "path": "scripts/download_indoor_scene.py",
+      "source_sha256": "e97ae09b5d09f702c9492cb18ea2900b827759f278b1e6cf23f64d66a0844d66"
+    },
+    {
+      "path": "scripts/download_scene_gen_models.py",
+      "source_sha256": "e016d24b81ce0364124ce4f41007ba12758a856f3ea9082aabaed921845c6a19"
+    },
+    {
+      "path": "scripts/download_worldsculpt_geometry.py",
+      "source_sha256": "b7918c172bc84a274534f320d11102ab596db479b208ff26b45e453c432896b7"
+    },
+    {
+      "path": "scripts/open_scene_isaac.py",
+      "source_sha256": "c9c044d00cf7a2a463189b82f981122d77c73390728e65403d8901659bf862ad"
+    },
+    {
+      "path": "scripts/patches/sam3d-gaussian-only.patch",
+      "source_sha256": "1b6bd2c35c2e28cd51b7303eb57c887b0bbba50b9d0e91dec258dddfe3ee6d66"
+    },
+    {
+      "path": "scripts/retry_remaining_full_objects.py",
+      "source_sha256": "9e7d836db748b1e2e509a68383c3ac0768982c510573469dfb12664c81f73b81"
+    },
+    {
+      "path": "scripts/run_scene_gen.sh",
+      "source_sha256": "4ce1414a4d07c99a1a98fe2389ccadf3660d797082f92f606d72b1f89d7eb103"
+    },
+    {
+      "path": "scripts/run_scene_gen_3d.sh",
+      "source_sha256": "bca58d704f3260a06cfc7864b8d22b67f27571c4136981fdce4729c6f07d0907"
+    },
+    {
+      "path": "scripts/run_scene_gen_indoor.sh",
+      "source_sha256": "5d121cc16a3c98cb1d542e4be9d8f7195fba5e451ec3095f4c1dc9d4170e88de"
+    },
+    {
+      "path": "scripts/setup_scene_gen.sh",
+      "source_sha256": "840260d5e0fc0a253bee77f477404b355bebad092e4446856905effd0e2447d1"
+    },
+    {
+      "path": "scripts/setup_scene_gen_3d.sh",
+      "source_sha256": "3904631b0574eca1c173f638af12bc142e06511acc2b48d5f5822d7afa490084"
+    },
+    {
+      "path": "scripts/setup_scene_gen_worldsculpt.sh",
+      "source_sha256": "ac60df78f6dfe727e0d45802ddb313a4fcd6ce6f58b9a66a996b7a9940432ae5"
+    },
+    {
+      "path": "scripts/validate_full_object_scene_isaac.py",
+      "source_sha256": "6d9c91fbe99ab01696067c3ec903867b770cbbc05926343d54acb2359bb5fbe4"
+    },
+    {
+      "path": "scripts/validate_hybrid_isaac.py",
+      "source_sha256": "5811b9252de5c1fd497d0f9da3c84941c9cffbc5aa113d757654a5acf198ba6f"
+    },
+    {
+      "path": "scripts/validate_scene_isaac.py",
+      "source_sha256": "137f098054760cc45e11fdf81ecc9dc1408469ff3cc41047741187f6d8588111"
+    },
+    {
+      "path": "setup.py",
+      "source_sha256": "cb4b41857bb24173f8f2c1c7ac16e3228c1b16232a78a6eb1a6af9aa239c956b"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/Base-Mask2Former.yaml",
+      "source_sha256": "231d00cfd00fe1b0ef3b137c9596ddd1caee771d792b39fae2858dbe4b410d46"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/cropformer_hornet_3x.yaml",
+      "source_sha256": "bf2bc90b8a890078615d8e4d9e7b156fbbe58e498875fbb23c72b03b8f9e4f17"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/cropformer_swin_large_3x.yaml",
+      "source_sha256": "33338e370019c58a52045f091cee099a63473b8d0dfb750abafd9226d93e490e"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/cropformer_swin_tiny_3x.yaml",
+      "source_sha256": "c4ca563b9acec5b3a258f9206a9fb45bc89765c304da2cbec94b38ebd25b668e"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x.yaml",
+      "source_sha256": "41bcec7f0679bab070c6f31b34024135c7258c2584fb3094d91bd4420c200df7"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x_lr.yaml",
+      "source_sha256": "91b149a07b6f713451cfc43738067c32f8883a66258042f58cc51e2e29a302b0"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml",
+      "source_sha256": "1d999593beeb75b1048ea3e77dad8fdba043943ad8d026e5c60cabd2933ab4ea"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_tiny_3x.yaml",
+      "source_sha256": "940160e0ffa1f3bf991a901bf8f25c7b46ad4117518f3f4ef43f1e656a357f36"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/Base-Mask2Former.yaml",
+      "source_sha256": "01312ef996ff84effc2abdf3dc533b1d45839d8cad553572b305d3ec0f24c425"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/Base-RCNN-FPN.yaml",
+      "source_sha256": "884738245821dbfe0f3353966502c8de56a7d9c5c9da1f5138a4047efb216562"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/mask2former_R_50.yaml",
+      "source_sha256": "e60a6df0bc6cdc138d693ff2f694058154307882a4f7cc005cb14ae1bfe836cf"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/mask2former_swin_large.yaml",
+      "source_sha256": "89c0bed1bcfb2f028ffe34a1d11bc425da277308aa341cfb4efb3ebd89f052fa"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/mask2former_swin_tiny.yaml",
+      "source_sha256": "e6bbbb8ba769d1b122db336d98367697655ed0a1b77fb66d30f977ea33b3fbda"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/instance_segmentation/mask_rcnn_R_50.yaml",
+      "source_sha256": "7c7dd5990d9a7f2acda262b6eb806a4528c2233663cffa5311be47532fc81dbd"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/Base-Mask2Former.yaml",
+      "source_sha256": "f43257c05e12b5e04ae0fa6fa8cb94f38246c8e9562d468bef9ff58ed131bf1b"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/Base-Panoptic-FPN.yaml",
+      "source_sha256": "b1a206455f376963b9833249b6a7e33e333c7b8a1fc09c84c835e7b71d624f6d"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/mask2former_R_50.yaml",
+      "source_sha256": "56820345a823b6b70caa92fc6d5509e437f1de9d8868e0578af08d0d9be1f8c1"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/mask2former_swin_large_w12.yaml",
+      "source_sha256": "2690b54c865222975875fd4ecf4f1d108ff62f8a8d170eb5d8945e8a0f8dd27f"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/mask2former_swin_large_w7.yaml",
+      "source_sha256": "b2682ea445e224c3950715bcef6e6dda9709741fc89a442510fb32b7467eaae3"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/mask2former_swin_tiny.yaml",
+      "source_sha256": "9a1b2ec76a1d072322713b50d87fae29b028faab5a95567972f96476ec6dafff"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/panopticfpn_R50.yaml",
+      "source_sha256": "bd810f69faa1df61e76ca257cf28b1d7b0238527fcddc0379afc868e121e069e"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/panoptic_segmentation/panopticfpn_swin_tiny.yaml",
+      "source_sha256": "2b620f7540815990b6f7704c3b09307388903abd83b3443e9ae8fbe6509cb55c"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/semantic_segmentation/Base-Mask2Former.yaml",
+      "source_sha256": "16007de437d2389ba9d900decea41379a390121219a00399ab70c87d07ea5423"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/semantic_segmentation/mask2former_R_50.yaml",
+      "source_sha256": "406aefa0505b95328f5a06034fdad4fd4d0cb38206cb21cb50e1ab3ec62e3a6c"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/semantic_segmentation/mask2former_swin_large_w12.yaml",
+      "source_sha256": "14b044410b218dc63c359eb77c03c2eb9b0189acd0810232ec5f70d2326fb7a1"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/semantic_segmentation/mask2former_swin_large_w7.yaml",
+      "source_sha256": "0e387564514c261dde7d2e8f66706f95e0b58bb77ec07896904b204a1aea711a"
+    },
+    {
+      "path": "submodules/CropFormer/configs/entityv2/semantic_segmentation/mask2former_swin_tiny.yaml",
+      "source_sha256": "319a6c93da23bf276f733934d3ff4e8617bf37e99dc286b371246ae7ec4ae0cf"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/__init__.py",
+      "source_sha256": "0560bf08751e45ef1c75e9e7c4b5af4974fe0367f97ba3c42f5f5b15c2f4a1f6"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/config.py",
+      "source_sha256": "c3502592ea33c6763f3e00561152ac4fca964f0bcb61a4f5f881c0a629910550"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/cropformer_model.py",
+      "source_sha256": "8922ef2d17c73c60b67d6008df759e4c2d54e5ca44111fb689a0288d22f0a8ec"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/__init__.py",
+      "source_sha256": "1ada284520fea06c42f2d5c1391213fdc7f8e7357341d692335aa90547e931e7"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/__init__.py",
+      "source_sha256": "1f45f6a979b53c81ac85894aae6f474f070379b5619abd6ce74204188f97bbf3"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/coco_instance_new_baseline_dataset_mapper.py",
+      "source_sha256": "6699f9977c6f0221770050af0111bd9a7b1e8810c2e49a1ea7fac48727851d19"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/coco_panoptic_new_baseline_dataset_mapper.py",
+      "source_sha256": "1bb64545e261fb5cac91eae132b1e64e5751c56bdfdc38f2ab29b2e0955ec8b6"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/crop_augmentations.py",
+      "source_sha256": "17c27f26e38456babd4d5dee79eaa59a9d7b59ef2be9bef158fabb72e0f62eeb"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/entity_crop_dataset_mapper.py",
+      "source_sha256": "5449fc1d223f0c57e8a2c45b49490c1bf5fca85d1e3bd03a6ac5e0c141f7b983"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/mask_former_instance_dataset_mapper.py",
+      "source_sha256": "25cda8074a44fc1b3215bcb71ea5375da9daf075091250770e40556ab3aac1a2"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/mask_former_panoptic_dataset_mapper.py",
+      "source_sha256": "94e84ee0395c2d8ff62a064884645fe903a4d3ef5aa42a81aec17002a1caf20c"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/dataset_mappers/mask_former_semantic_dataset_mapper.py",
+      "source_sha256": "b7b513d5dbfd8306a3092ee6ef9f47d70daaaec1efb90add81258833cae3b90f"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/__init__.py",
+      "source_sha256": "5fcad5e9770291d65d95c62cfc4328eda26ee1545da6984785d42979157a0a38"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_ade20k_full.py",
+      "source_sha256": "0b1483c4c21b520984c066ee324f66948286a89195a7bc1fd07ca6af2ec7fbdf"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_ade20k_instance.py",
+      "source_sha256": "ce50005487184a70b7ecdea0d7ac7cba2fdcdc1caebf2eeb5e3d9d98bf96ecd6"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_ade20k_panoptic.py",
+      "source_sha256": "947ad32480e37838018cd05c6aba4a25238b5274f2a3f3ba38ecdd458a2747fa"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_coco_panoptic_annos_semseg.py",
+      "source_sha256": "7908d4e1d4645c0ac149fb52db4835599d361a3c4d366150f66070fd352eb135"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_coco_stuff_10k.py",
+      "source_sha256": "b5a98bee10763b0b880810370cd992f20666b561a02a1038924d627d2bd4f1c8"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_entityv2_entity.py",
+      "source_sha256": "2b29086240d36c5dac870c39cba0e976b91e28ca8252c9d173de93c8fd85ebc8"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_entityv2_instances.py",
+      "source_sha256": "aff83d5fc49047c2c29835c8d049057d3d16960978a31af6f5d9deeee89d2a40"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_entityv2_panoptic_350.py",
+      "source_sha256": "4603bcf8e7aa9518ee9f6a7e82a54411e81951fc32b11d47be8845a6bb5300ed"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_entityv2_semseg_150.py",
+      "source_sha256": "273f3c22217b7d23cddff073511f7a461f8d17e6e0344fbb1689467c79c712ed"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_mapillary_vistas.py",
+      "source_sha256": "1cbb3c0b5402dec07bde5b0dc76df478aaa28d07c0bf7b26d65f7eaf33e7882e"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/data/datasets/register_mapillary_vistas_panoptic.py",
+      "source_sha256": "ed310a118a57b1124a829db9298ba04a07036b237f2a49c64c8e7727fdc7fd79"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/evaluation/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/evaluation/entity_evaluation.py",
+      "source_sha256": "4d98f5ef14300f19d0068fa0b5994b6d75f7bec7d3b416795e8cb484c31ad9b5"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/evaluation/instance_evaluation.py",
+      "source_sha256": "c4fa493a85e62d45d973ce60b6a0ef6c3fdc54b797f5daf7b253765de4d97269"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/maskformer_model.py",
+      "source_sha256": "99cc06f79cdf9bf1c40cc8d40709bc0f0cddf0bf7312cbec04524eeffa598813"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/__init__.py",
+      "source_sha256": "8ab2f7265aafabbb72ac0a9c46e09acec6eda626900d46a8ac81b7a48ebc8538"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/backbone/__init__.py",
+      "source_sha256": "1f45f6a979b53c81ac85894aae6f474f070379b5619abd6ce74204188f97bbf3"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/backbone/hornet.py",
+      "source_sha256": "29bc876042009a2365c75b7c80d58c0bffd0c35f56f07fd61f111d5320453e81"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/backbone/swin.py",
+      "source_sha256": "03f6a777477103c7174b3bfe821f80d4aac4e557f68f790ccc99a3c5e99095ac"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/criterion.py",
+      "source_sha256": "1b00b1782672d43e7ad11c9019eba880857d2b846bdb154d3d24272b57790bf5"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/criterion_view.py",
+      "source_sha256": "3cd84690ed3e1193a503f10c7e2a0823bb0e2235fd1bd104bf1af6465e011a17"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/matcher.py",
+      "source_sha256": "fc83aa3300498a3933e3b22dde6f73f9e298b8947328887d525b7da199a761d9"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/matcher_view.py",
+      "source_sha256": "71e70b1b0e90ba292c50818e5dcae46cf33105c29c5f84b4dd45dc72c103854f"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/meta_arch/__init__.py",
+      "source_sha256": "1f45f6a979b53c81ac85894aae6f474f070379b5619abd6ce74204188f97bbf3"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/meta_arch/mask_former_head.py",
+      "source_sha256": "24a1cb3d199b8afb5a42151c1697c23b1c45e3d33911cc0981055fde9f7d76b4"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/meta_arch/per_pixel_baseline.py",
+      "source_sha256": "adeb9299f32da1cab42d20ca86bf6bcd446c17e8243a2aa1476294ed2d830535"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/__init__.py",
+      "source_sha256": "1f45f6a979b53c81ac85894aae6f474f070379b5619abd6ce74204188f97bbf3"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/fpn.py",
+      "source_sha256": "4b8e057a209926238e0b51d27f6d060f9c5d54bc08f00781bde5776db2f7d0e7"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/msdeformattn.py",
+      "source_sha256": "5fa4343b161bbab94ee3c5fef54bf38e3b0c7057c645ddc9606785efb9eabc7f"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/functions/__init__.py",
+      "source_sha256": "99c5c440b0a1a41f78d31f7fe68262f0aacbe59562eacc4b4d013d4ef6424e3b"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/functions/ms_deform_attn_func.py",
+      "source_sha256": "0b50dc9a3898eb279057bb84576c574b19b33c59a228dcefe5ffbeacd596dddc"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/make.sh",
+      "source_sha256": "4c5a877daa42baa9f239f3d3924fa1494538b35c264d7128eca4372e99cf1a3a"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/modules/__init__.py",
+      "source_sha256": "b72cb718272847a052ec5e8caae1095718438fe2e09b94e9b3acff7b3da7d3f0"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/modules/ms_deform_attn.py",
+      "source_sha256": "8847d37c4718a5a570600fa203cccfd77ca8cef09fbbace3b6cd984661e981e8"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/setup.py",
+      "source_sha256": "9a9fde8fc71190a4f38c3d988cb625a47f53d589b811532009361280c5917bdf"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "source_sha256": "d52c782c5793858269d5440249fae6b475f0257e7076b815708d1c4486e72b92"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.h",
+      "source_sha256": "ef7a0fb1be1985aecbf6b459a5038d688075ca7802e095b58b1377531c4362ee"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "source_sha256": "23d54d1293a35f0285863f84d02b3d55581c68cec938bcaba5aff4e43deea7f8"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.h",
+      "source_sha256": "402ad3a8815d8ee6baeadb73d80444f3d6d286af46feed8bc50162f9cfde83a0"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "source_sha256": "08d0644c24d46f7d6c9e804c3d42522e06f517da454d9dc29cdc2dcf53ef9dfb"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/ms_deform_attn.h",
+      "source_sha256": "6dcd4c44d971a5c2c331e1e23f3170c15bd90563626b1126a6c0d22b4ddebbb5"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/src/vision.cpp",
+      "source_sha256": "4ed8ff5bcf34126aaeec6d28d8cfc985d7534451c5df6d7bada273ec51676284"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/pixel_decoder/ops/test.py",
+      "source_sha256": "a71a0f5a389cfa7febe90151837f473d82dd88f08afa36a6f8f3e2dbe1af59d4"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/__init__.py",
+      "source_sha256": "d0388bd06ed3b1b0d282ddffaa23b2f3b4b9350e8eb1c7b77d7f398a5c22eb59"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/cropformer_transformer_decoder.py",
+      "source_sha256": "38ecd4c97f7d3c67c2ecd7c20d77235ff0b475c6fccfe04167e34c0ad74b9ce4"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/mask2former_transformer_decoder.py",
+      "source_sha256": "a2d65341734ff0842e66826d31184845d598bfee854bd6f0a8a15563e6530906"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/maskformer_transformer_decoder.py",
+      "source_sha256": "70cc33a7ac872397afc72986de87dc7eb3db9f5ba87eb58e2b4220b17d56cb82"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/position_encoding.py",
+      "source_sha256": "796d8821fdded5abf084c5fe3aff84dfd0b6a00fd7cf1c78393951cdbf61ccaf"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/modeling/transformer_decoder/transformer.py",
+      "source_sha256": "40a476eb9cf0ba7c51bd247b7dbe270f4e177b6a0ba74f04314dd7de87792ade"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/test_time_augmentation.py",
+      "source_sha256": "d93f5bef35ad61915402730b8fa7a96a8f9dbc252e1a2496985547b88601ee63"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/utils/__init__.py",
+      "source_sha256": "1f45f6a979b53c81ac85894aae6f474f070379b5619abd6ce74204188f97bbf3"
+    },
+    {
+      "path": "submodules/CropFormer/mask2former/utils/misc.py",
+      "source_sha256": "ed99605bee33e2baf060432b1e41b17e27112b8c674dc7161f16169c5ace971e"
+    },
+    {
+      "path": "submodules/CropFormer/predictor.py",
+      "source_sha256": "dae9019a8c30e27b387dec7a145c5dbb92835af5b49c84c0415dca6ee75ce70f"
+    },
+    {
+      "path": "submodules/CropFormer/requirements.txt",
+      "source_sha256": "50e2eda60e49511f0362fbee8de28a1eaa065b2e012df4e3e02005718664caba"
+    },
+    {
+      "path": "submodules/CropFormer/run_cropformer.py",
+      "source_sha256": "d55124cbe9baa28777b148895711bafa1e52ac47024a5b102f3ce831aa917b0d"
+    },
+    {
+      "path": "submodules/CropFormer/run_segmentation.sh",
+      "source_sha256": "a632b4f22401af852316b119bd42b3839e39576d0df3965db77b301abf072423"
+    },
+    {
+      "path": "tests/test_scene_gen_geometry.py",
+      "source_sha256": "71cc15aff8b0077577dc39bcd21c801226947aae8e788e555145d04d0ce7b94e"
+    }
+  ]
+}

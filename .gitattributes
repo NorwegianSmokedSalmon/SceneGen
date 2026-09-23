@@ -1,0 +1,2 @@
+# Patch context must retain exact upstream whitespace.
+scripts/patches/*.patch -whitespace

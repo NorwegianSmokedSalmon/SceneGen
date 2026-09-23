@@ -1,0 +1,44 @@
+# Install torch==2.10.0 and torchvision==0.25.0 from the cu130 index first.
+# CUDA extensions are installed separately with --no-build-isolation.
+setuptools<81
+numpy==1.26.4
+opencv-python==4.11.0.86
+viser==0.2.23
+imageio[ffmpeg]
+scikit-learn
+tqdm
+torchmetrics[image]
+tyro>=0.8.8,<1
+Pillow
+tensorboard
+tensorly
+pyyaml
+matplotlib
+splines
+ninja
+jaxtyping
+rich>=12
+kornia
+open3d==0.19.0
+trimesh
+networkx
+scipy
+einops
+pycocotools
+hydra-core
+fvcore
+iopath>=0.1.10,<0.2
+cython
+shapely
+h5py
+submitit
+scikit-image
+pycolmap==3.13.0
+timm>=1.0.17
+huggingface_hub
+httpx[socks]
+mmcv==1.7.2
+requests
+
+# CropFormer weight downloader used by setup_scene_gen.sh.
+gdown==5.2.0

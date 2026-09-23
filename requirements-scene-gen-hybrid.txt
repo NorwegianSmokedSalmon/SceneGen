@@ -1,0 +1,5 @@
+# Add to the existing project WorldSculpt environment.
+usd-core==26.8
+nvidia-ncore==19.0.0
+simplejpeg==1.9.0
+msgpack==1.2.2

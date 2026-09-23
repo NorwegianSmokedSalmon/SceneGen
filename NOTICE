@@ -1,0 +1,18 @@
+SceneGen contains a scene-generation working-tree snapshot derived from
+Extended-GS (https://github.com/AshadowZ/Extended-GS), branch scene_gen.
+The original repository's Apache-2.0 LICENSE and gsplat CITATION.bib are retained.
+
+The bundled gsplat rasterizer, training and dataset code derives from
+https://github.com/nerfstudio-project/gsplat and Extended-GS. Original file-level
+copyright notices remain in place. The Python distribution remains named gsplat;
+SceneGen is the enclosing workflow repository, not a renamed rasterizer package.
+
+submodules/CropFormer derives from qqlu/Entity and Mask2Former. Its subtree LICENSE
+is retained, as is Entity's repository-level license in third_party_licenses/.
+Local modifications include the scene runner, timm compatibility, and PyTorch
+CUDA scalar/type API fixes. See THIRD_PARTY.md for sources and scope.
+
+Changes made when extracting this snapshot are documented in
+ docs/PUBLISHING_NOTES.zh-CN.md. Source hashes before those packaging edits are in
+ docs/source_provenance.json. Models and datasets are downloaded separately and
+remain subject to their upstream terms.

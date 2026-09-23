@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-09-23T04:59:33.762230+00:00",
+  "source_checks": {
+    "python_syntax_files": 151,
+    "shell_syntax_files": 8,
+    "internal_markdown_links": "passed",
+    "common_credential_patterns": "none detected",
+    "generated_or_model_files": "excluded"
+  },
+  "geometry_regression": {
+    "tests_run": 4,
+    "passed": true
+  },
+  "imports_from_standalone_checkout": [
+    "gsplat",
+    "datasets.colmap",
+    "observed_color_material",
+    "assemble_full_object_scene",
+    "generate_worldsculpt_objects",
+    "track_full_scene_objects",
+    "reconstruct_scene_simulation"
+  ],
+  "cli_help_checks": 7,
+  "glb_color_and_material_check": "passed",
+  "existing_object_audit": {
+    "objects": 66,
+    "watertight": 66,
+    "semantic_completeness": "not certified"
+  },
+  "glm_submodule": "33b4a621a697a305bc3a7610d290677b96beb181 initialized from upstream",
+  "scope": "Checks use installed local environments. No clean-machine installation, model download, scene retraining or full 66-object regeneration was performed for this publication."
+}

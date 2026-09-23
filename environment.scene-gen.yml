@@ -1,0 +1,13 @@
+name: scene_gen
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+# Install CUDA/Python packages with scripts/setup_scene_gen.sh after creation.
+# Verified on RTX 5090, driver 580.65.06, system CUDA toolkit 13.0.
+variables:
+  CUDA_HOME: /usr/local/cuda-13.0
+  TORCH_CUDA_ARCH_LIST: '12.0'
+  MAX_JOBS: '6'
+  LD_LIBRARY_PATH: ''

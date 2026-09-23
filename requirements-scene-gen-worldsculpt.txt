@@ -1,0 +1,15 @@
+# Overlay on the existing scene_gen_3d Conda environment (torch 2.10.0+cu130).
+transformers==4.57.1
+peft==0.18.0
+huggingface-hub==0.36.2
+accelerate==1.15.0
+diffusers==0.39.0
+fpsample==1.0.2
+zstandard==0.25.0
+setuptools<81
+easydict
+kornia
+pycocotools
+ftfy
+tensorboard
+# CUDA extensions and utils3d: installed by setup_scene_gen_worldsculpt.sh.
